@@ -30,15 +30,14 @@ h1{
     height:100px;
     padding-top: 40px;
 }
-
-.green{
-    background-color: lightgreen;
-}
-
-.orange{
+p.orange{
     background-color: darkorange;
 }
 
-.brown{
+p.green{
+    background-color: lightgreen;
+}
+
+p.brown{
     background-color: brown;
 }

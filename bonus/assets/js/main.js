@@ -23,9 +23,9 @@ const containerElement = document.querySelector(".container");
         // 1. Foor lop
     for(i = 1; i <= 100; i++){
 
-        const fizz = "Fizz";
-        const buzz = "Buzz";
-        const fizzBuzz = "FizzBuzz";
+        let fizz = "Fizz";
+        let buzz = "Buzz";
+        let fizzBuzz = "FizzBuzz";
 
         let p = document.createElement('p');
 
@@ -33,13 +33,16 @@ const containerElement = document.querySelector(".container");
 
         // 2. If statement
         if(i % 3 == 0 && i % 5 == 0){
-           p.append(`${fizzBuzz}`);// FizzBuzz
+            p.classList.add("brown");
+            p.append(`${fizzBuzz}`);// FizzBuzz
         } else if(i % 3 == 0){
+            p.classList.add("green");
             p.append(`${fizz}`); // Fizz
         } else if(i % 5 == 0){
+            p.classList.add("orange");
             p.append(`${buzz}`); // Buzz
         } else{
-            p.append(`${i}`); // number
+            p.append(`${i}`); 
         }
     }
 
