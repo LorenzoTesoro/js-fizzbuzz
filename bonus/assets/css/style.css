@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: darkcyan;
+    text-align: center;
+}
+
+h1{
+    color:white;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.container{
+    width:1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+}
+
+.container > p{
+    background-color: cadetblue;
+    width:100px;
+    height:100px;
+    padding-top: 40px;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.orange{
+    background-color: darkorange;
+}
+
+.brown{
+    background-color: brown;
+}

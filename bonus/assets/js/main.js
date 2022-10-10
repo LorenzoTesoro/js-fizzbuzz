@@ -27,15 +27,16 @@ const containerElement = document.querySelector(".container");
         const buzz = "Buzz";
         const fizzBuzz = "FizzBuzz";
 
-        const p = document.createElement('p');
+        let p = document.createElement('p');
+
         containerElement.append(p);      
 
         // 2. If statement
         if(i % 3 == 0 && i % 5 == 0){
-            p.append(`${fizzBuzz}`); // FizzBuzz
+           p.append(`${fizzBuzz}`);// FizzBuzz
         } else if(i % 3 == 0){
             p.append(`${fizz}`); // Fizz
-        } else if(i % 5 == 0){ 
+        } else if(i % 5 == 0){
             p.append(`${buzz}`); // Buzz
         } else{
             p.append(`${i}`); // number
